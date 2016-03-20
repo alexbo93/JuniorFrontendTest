@@ -1,0 +1,138 @@
+html body{
+	background-color: #F0F0F0;
+	font-family: Helvetica "neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+
+/*	 UTILS	 */
+
+.margin_b{
+	margin-bottom: 15px;
+}
+
+.margin_r{
+	margin-right: 10px;
+}
+
+/*	  SEARCH FORM	 */
+
+.search{
+	background-color: white;
+	border-radius: 16px;
+	position: relative;
+	max-width: 340px;
+	max-height: 390px;
+	top:70px;
+	margin: auto;
+	padding: 30px;
+	-webkit-box-shadow: 7px 9px 49px -3px rgba(100,100,100,1);
+	-moz-box-shadow: 7px 9px 49px -3px rgba(100,100,100,1);
+	box-shadow: 7px 9px 49px -3px rgba(100,100,100,1);
+}
+
+.input{
+	border-radius: 5px;
+	border: 1px solid #CCCCCC;
+	height: 30px;
+	padding-left: 10px;
+	width: 73%;
+	margin-right: 10px;
+}
+
+.input:hover, 
+.input:focus{
+	border: 1px solid #70BFC0;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+	outline: none;
+}
+
+.btn{
+	padding: 7px;
+}
+
+.btn:hover, 
+.btn:focus{
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px #CCCCCC;
+}
+
+/* 	 USER INFORMATION 	*/
+
+.result{
+	max-height:338px;
+	overflow-y:hidden;
+}
+
+.usr_info{
+	max-height:80px;
+	overflow: hidden;
+}
+
+.bio{
+	display: inline-block;
+	vertical-align: top;
+	max-width: 75%;
+}
+
+.avatar{
+	border-radius: 3px;
+}
+
+.username{
+	font-size: 2em;
+}
+
+/*	 TABLE STYLES	*/
+
+.t_repos{
+	width:100%;
+	border-collapse: collapse;
+}
+
+.t_repos thead th{
+	float: left;
+	height: 25px;
+	font-size: 1.2em;
+}
+
+.t_repos thead tr{
+	border-bottom: solid 2px #585858;
+}
+
+.t_repos tbody tr{
+	border-bottom: solid 1px #DADADA;
+	height: 40px;
+}
+
+.name{
+	font-size: 1.3em;
+	padding-left: 10px;
+}
+
+.stats{
+	font-size: 1em;
+	float: right;
+	padding-right: 10px;
+}
+
+.stars:before{
+	font-family: FontAwesome;
+	content: "\f005";
+	margin-right: 4px;
+}
+
+.forks:before{
+	font-family: FontAwesome;
+	content: "\f126";
+	margin-right: 4px;
+}
+
+/*	 NOT FOUND MESSAGE 	*/
+
+.error_msg{
+	padding: 15px;
+	background-color: #F4DADA;
+	border: 1px solid #D8B9B9;
+	border-radius: 3px;
+	color: #AB3906;
+}
+

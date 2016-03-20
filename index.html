@@ -2,10 +2,19 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Hello!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+    <script src="script.js"></script>
+    <title>User Info Search</title>
 </head>
 <body>
-
-<h1>Hello!</h1>
+<div class="search">
+	<form id="search" method="get" action="javascript:searchUser()">
+		<input id="input_user" class="input margin_r" type="text" name="fname" placeholder="Search username..." required>
+		<button class="btn" type="submit"><b>Search</b></button>
+	</form>
+	<div id="result_cont" class="result">
+	</div>
+</div>
 </body>
 </html>

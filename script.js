@@ -2,7 +2,6 @@ function searchUser(){
 	var user_request = document.getElementById('input_user').value;
 	req = new XMLHttpRequest();
 	url = "https://api.github.com/users/"+user_request;
-	console.log(url);
 	req.open('GET', url, false);
 	req.send();
 
@@ -12,6 +11,7 @@ function searchUser(){
 	//empty the container html to display the next user or error message
 	document.getElementById('result_cont').innerHTML=""; 
 	if(req.status=="200"){
+		document.getElementById('main').style.height="390px";
 		user_info = JSON.parse(req.responseText);
 		//Let's get the repos and the info related
 		url=url+"/repos";
@@ -22,6 +22,7 @@ function searchUser(){
 		}
 
 	}else if(req.status=="404"){
+		document.getElementById('main').style.height="";
 		displayNotFound();
 	}
 }
@@ -66,7 +67,6 @@ function displayRepos(repos){
 
 	tbody=document.createElement('tbody');
 	repos.forEach(function(repo){
-		console.log(repo);
 		new_row = tbody.insertRow(tbody.rows.length);
 		new_row.setAttribute('class','row');
 

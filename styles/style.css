@@ -20,14 +20,15 @@ html body{
 	background-color: white;
 	border-radius: 16px;
 	position: relative;
-	max-width: 340px;
+	width: 340px;
 	max-height: 390px;
 	top:70px;
 	margin: auto;
-	padding: 30px;
+	padding: 5%;
 	-webkit-box-shadow: 7px 9px 49px -3px rgba(100,100,100,1);
 	-moz-box-shadow: 7px 9px 49px -3px rgba(100,100,100,1);
 	box-shadow: 7px 9px 49px -3px rgba(100,100,100,1);
+	overflow-y:hidden;
 }
 
 .input{
@@ -35,8 +36,8 @@ html body{
 	border: 1px solid #CCCCCC;
 	height: 30px;
 	padding-left: 10px;
-	width: 73%;
-	margin-right: 10px;
+	width: 70%;
+	margin-right: 5%;
 }
 
 .input:hover, 
@@ -47,7 +48,8 @@ html body{
 }
 
 .btn{
-	padding: 7px;
+	padding: 6px;
+	width:20%;
 }
 
 .btn:hover, 
@@ -58,7 +60,7 @@ html body{
 /* 	 USER INFORMATION 	*/
 
 .result{
-	max-height:338px;
+	max-height:86%;
 	overflow-y:hidden;
 }
 

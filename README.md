@@ -1,5 +1,20 @@
 # JuniorFrontendTest
 
+#### About the code
+
+The code is organized in 3 main files. The names are autodescriptive but this is a quick summary:
+
+- index.html --> Contains the main structure of the code. You can see that most of the elements in the screen don't appear in this file, that is because some elements are added with javascript which will be seen in the next file explanation.
+
+- script.js --> The main javascript file. In this we make the GitHub API calls to get the necessary data that will be displayed in the web. Moreover, because of the lack of other technologies permitted Javascript's been used to complete the whole website structure depending on the data provided by the API. For Example, if the code received is 200 OK, then we call the methods to display user info; if the code is 404 then not found message will be displayed.
+
+- styles folder --> contains both main styles and fontawesome styles (need to add icons)
+
+	- style.css --> main css styles.
+
+	- font-awesome.min.css --> it has been necessary to add font-awesome styles to add the icons needed to represent forks and stars. It is the only use of font awesome made in this web service. There is a folder called "fonts" as well, which provides the icons.
+
+	
 ## GOALS
 
 
@@ -45,15 +60,4 @@ If the searched username does not exist: An error is shown
 ![](https://github.com/gerardcobas/JuniorFrontendTest/blob/master/images/Error-screen.png)
 
 
-#### About the code
-
-The code is organized in 3 main files. The names are autodescriptive but this is a quick summary:
-
-- index.html --> Contains the main structure of the code. You can see that most of the elements in the screen don't appear in this file, that is because some elements are added with javascript which will be seen in the next file explanation.
-
-- script.js --> The main javascript file. In this we make the GitHub API calls to get the necessary data that will be displayed in the web. Moreover, because of the lack of other technologies permitted Javascript's been used to complete the whole website structure depending on the data provided by the API. For Example, if the code received is 200 OK, then we call the methods to display user info; if the code is 404 then not found message will be displayed.
-
-- style.css --> main css styles.
-
-- font-awesome.min.css --> it has been necessary to add font-awesome styles to add the icons needed to represent forks and stars. It is the only use of font awesome made in this web service. There is a folder called "fonts" as well, which provides the icons.
 
